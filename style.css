@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+#showcase {
+    background: rgb(228, 116, 11, 0.45);
+    color: black;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase::before {
+    content: '';
+    background: url('./photo-1562095241-8c6714fd4178.avif') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+}
+
+.showcase-container h1 ::after {
+    content: 'App';
+}
